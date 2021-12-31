@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 50px;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+.card {
+  max-width: 350px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 10px;
+}
+.card .imageMain {
+  position: relative;
+}
+.card .imageMain img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  /* position: relative;  */
+  /* display: none; */
+}
+.card .imageMain .viewHover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 247, 0.5);
+}
+.card .viewHover .view {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.card .imageMain:hover .viewHover {
+  display: block;
+}
+.card .imageMain:hover .view {
+  display: block;
+}
+.card h2 {
+  color: white;
+  cursor: pointer;
+}
+.card h2:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card p {
+  color: hsl(215, 51%, 70%);
+  line-height: 1.4;
+}
+
+.card .bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card .bottom .ethR {
+  color: hsl(178, 100%, 50%);
+  margin-right: 120px;
+}
+
+.card .bottom .time {
+  color: hsl(215, 51%, 70%);
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid hsl(215, 51%, 70%);
+  margin-top: 20px;
+}
+.creator img {
+  width: 30px;
+  height: auto;
+  margin-right: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.creator span {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.creator span:hover{
+  color:hsl(178, 100%, 50%);
+}
+
+.attribution{
+  margin-top: 50px;
+  color: hsl(215, 51%, 70%);
+}
+.attribution a{
+  color: hsl(215, 51%, 70%);
+  text-decoration: none;
+}
